@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdPersonDemoIMGs", "ThirdPersonDemoIMGs\ThirdPersonDemoIMGs.csproj", "{BC6A7B16-C659-471E-881F-FA35F9069CF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdPersonDemoIMGsDomain", "ThirdPersonDemoIMGsDomain\ThirdPersonDemoIMGsDomain.csproj", "{32D20682-98EB-42D6-A2BA-981695593224}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdPersonDemoIMGsInfrasturcture", "ThirdPersonDemoIMGsInfrasturcture\ThirdPersonDemoIMGsInfrasturcture.csproj", "{02550254-0085-4B19-9FF4-C51B4D86C20F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC6A7B16-C659-471E-881F-FA35F9069CF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC6A7B16-C659-471E-881F-FA35F9069CF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC6A7B16-C659-471E-881F-FA35F9069CF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC6A7B16-C659-471E-881F-FA35F9069CF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32D20682-98EB-42D6-A2BA-981695593224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32D20682-98EB-42D6-A2BA-981695593224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32D20682-98EB-42D6-A2BA-981695593224}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32D20682-98EB-42D6-A2BA-981695593224}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02550254-0085-4B19-9FF4-C51B4D86C20F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02550254-0085-4B19-9FF4-C51B4D86C20F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02550254-0085-4B19-9FF4-C51B4D86C20F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02550254-0085-4B19-9FF4-C51B4D86C20F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
