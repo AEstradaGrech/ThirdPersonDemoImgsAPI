@@ -13,6 +13,10 @@ namespace ThirdPersonDemoIMGs
     {
         public static void Main(string[] args)
         {
+            var config = new ConfigurationBuilder()
+                             .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                             .Build();
+            
             CreateHostBuilder(args).Build().Run();
         }
 

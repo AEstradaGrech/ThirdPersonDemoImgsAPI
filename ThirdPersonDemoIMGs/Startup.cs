@@ -30,13 +30,23 @@ namespace ThirdPersonDemoIMGs
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder
+                    .SetIsOriginAllowed((host) => true)
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials());
+            });
+
             services.AddDbContext<ApplicationContext>(options => options.UseMySql(Configuration["DbConnectionString"]));
 
             services.AddControllers();
 
             services.AddSwaggerGen(config =>
             {
-                config.SwaggerDoc("v1", new OpenApiInfo { Title = "TPS IMGs", Version = "v1" });
+                config.SwaggerDoc("v1", new OpenApiInfo { Title = "TPS IMGs", Version = "v1", });
                 config.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
             });
         }
@@ -49,6 +59,9 @@ namespace ThirdPersonDemoIMGs
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseSwagger();
+            app.UseSwaggerUI(config => config.SwaggerEndpoint("/swagger/v1/swagger.json", "TPS IMGs"));
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
@@ -60,8 +73,7 @@ namespace ThirdPersonDemoIMGs
                 endpoints.MapControllers();
             });
 
-            app.UseSwagger();
-            app.UseSwaggerUI(config => config.SwaggerEndpoint("swagger/v1/swagger.json", "TPS IMGs"));
+            
         }
     }
 }

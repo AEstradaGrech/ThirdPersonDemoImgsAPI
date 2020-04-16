@@ -2,6 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using ThirdPersonDemoIMGsDomain.Entities;
 using ThirdPersonDemoIMGsDomain.IRepositories;
 using ThirdPersonDemoIMGsInfrasturcture.Context.EntityTypeConfigurations;
 
@@ -25,6 +26,8 @@ namespace ThirdPersonDemoIMGsInfrasturcture.Context
         {
             return await base.SaveChangesAsync() > 0;
         }
+
+        DbSet<Image> Images { get; set; }
 
     }
 }
