@@ -22,8 +22,12 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="ValueInjecter" Version="3.2.0" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\Mappers\" />
+    <Folder Include="StartupConfigurationExtensions\" />
   </ItemGroup>
 </Project>

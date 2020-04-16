@@ -395,6 +395,15 @@
           "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
+      "ValueInjecter/3.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Omu.ValueInjecter.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Omu.ValueInjecter.dll": {}
+        }
+      },
       "ThirdPersonDemoIMGsDomain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
@@ -1163,6 +1172,23 @@
         "version.txt"
       ]
     },
+    "ValueInjecter/3.2.0": {
+      "sha512": "cB+YW4Jb9DRwLkAEsLZhK1mKvi5gwhPav9zMDrKaCH6CfheDcy7eJREEqshK81aP5j+48FyBeFE5PxbWwjpwYg==",
+      "type": "package",
+      "path": "valueinjecter/3.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Omu.ValueInjecter.dll",
+        "lib/net45/Omu.ValueInjecter.xml",
+        "lib/netstandard1.6/Omu.ValueInjecter.dll",
+        "lib/netstandard1.6/Omu.ValueInjecter.xml",
+        "lib/netstandard2.0/Omu.ValueInjecter.dll",
+        "lib/netstandard2.0/Omu.ValueInjecter.xml",
+        "valueinjecter.3.2.0.nupkg.sha512",
+        "valueinjecter.nuspec"
+      ]
+    },
     "ThirdPersonDemoIMGsDomain/1.0.0": {
       "type": "project",
       "path": "../ThirdPersonDemoIMGsDomain/ThirdPersonDemoIMGsDomain.csproj",
@@ -1180,7 +1206,8 @@
       "Pomelo.EntityFrameworkCore.MySql >= 3.1.1",
       "Swashbuckle.AspNetCore >= 5.3.1",
       "ThirdPersonDemoIMGsDomain >= 1.0.0",
-      "ThirdPersonDemoIMGsInfrasturcture >= 1.0.0"
+      "ThirdPersonDemoIMGsInfrasturcture >= 1.0.0",
+      "ValueInjecter >= 3.2.0"
     ]
   },
   "packageFolders": {
@@ -1242,6 +1269,10 @@
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[5.3.1, )"
+          },
+          "ValueInjecter": {
+            "target": "Package",
+            "version": "[3.2.0, )"
           }
         },
         "imports": [
