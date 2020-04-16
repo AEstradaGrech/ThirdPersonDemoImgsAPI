@@ -1,0 +1,59 @@
+﻿<Properties StartupConfiguration="{BC6A7B16-C659-471E-881F-FA35F9069CF9}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ThirdPersonDemoIMGs/Controllers/ImagesController.cs">
+    <Files>
+      <File FileName="ThirdPersonDemoIMGsDomain/Entities/Entity.cs" Line="6" Column="24" />
+      <File FileName="ThirdPersonDemoIMGsDomain/Entities/Image.cs" />
+      <File FileName="ThirdPersonDemoIMGsDomain/IRepositories/IRepository.cs" />
+      <File FileName="ThirdPersonDemoIMGsDomain/IRepositories/IUnitOfWork.cs" />
+      <File FileName="ThirdPersonDemoIMGsInfrasturcture/Repositories/BaseRespository.cs" />
+      <File FileName="ThirdPersonDemoIMGsInfrasturcture/Repositories/ImagesRepository.cs" />
+      <File FileName="ThirdPersonDemoIMGsDomain/IRepositories/IImagesRepository.cs" />
+      <File FileName="ThirdPersonDemoIMGsInfrasturcture/Context/ApplicationContext.cs" />
+      <File FileName="ThirdPersonDemoIMGsInfrasturcture/Context/EntityTypeConfigurations/ImageEntityTypeConfiguration.cs" />
+      <File FileName="ThirdPersonDemoIMGs/Startup.cs" Line="41" Column="16" />
+      <File FileName="ThirdPersonDemoIMGs/appsettings.Development.json" />
+      <File FileName="ThirdPersonDemoIMGs/WeatherForecast.cs" />
+      <File FileName="ThirdPersonDemoIMGs/appsettings.json" Line="17" Column="4" />
+      <File FileName="ThirdPersonDemoIMGsInfrasturcture/Migrations/20200416181437_InitialMig.cs" Line="6" Column="39" />
+      <File FileName="ThirdPersonDemoIMGsInfrasturcture/Migrations/20200416181437_InitialMig.Designer.cs" Line="15" Column="49" />
+      <File FileName="ThirdPersonDemoIMGs/Program.cs" Line="18" Column="30" />
+      <File FileName="ThirdPersonDemoIMGs/Controllers/ImagesController.cs" Line="11" Column="19" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ThirdPersonDemoIMGs" expanded="True">
+            <Node name="ThirdPersonDemoIMGs" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True">
+                <Node name="ImagesController.cs" selected="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+            <Node name="ThirdPersonDemoIMGsDomain" expanded="True">
+              <Node name="Entities" expanded="True" />
+              <Node name="IRepositories" expanded="True" />
+            </Node>
+            <Node name="ThirdPersonDemoIMGsInfrasturcture" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Context" expanded="True">
+                <Node name="EntityTypeConfigurations" expanded="True" />
+              </Node>
+              <Node name="Migrations" expanded="True" />
+              <Node name="Repositories" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.ThirdPersonDemoIMGs PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

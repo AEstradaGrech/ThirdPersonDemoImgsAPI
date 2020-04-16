@@ -1,0 +1,213 @@
+{
+  "format": 1,
+  "restore": {
+    "/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs.csproj": {}
+  },
+  "projects": {
+    "/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs.csproj",
+        "projectName": "ThirdPersonDemoIMGs",
+        "projectPath": "/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs.csproj",
+        "packagesPath": "/Users/Alvaro/.nuget/packages/",
+        "outputPath": "/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/Alvaro/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGsDomain/ThirdPersonDemoIMGsDomain.csproj": {
+                "projectPath": "/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGsDomain/ThirdPersonDemoIMGsDomain.csproj"
+              },
+              "/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGsInfrasturcture/ThirdPersonDemoIMGsInfrasturcture.csproj": {
+                "projectPath": "/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGsInfrasturcture/ThirdPersonDemoIMGsInfrasturcture.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.3.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGsDomain/ThirdPersonDemoIMGsDomain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGsDomain/ThirdPersonDemoIMGsDomain.csproj",
+        "projectName": "ThirdPersonDemoIMGsDomain",
+        "projectPath": "/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGsDomain/ThirdPersonDemoIMGsDomain.csproj",
+        "packagesPath": "/Users/Alvaro/.nuget/packages/",
+        "outputPath": "/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGsDomain/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/Alvaro/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGsInfrasturcture/ThirdPersonDemoIMGsInfrasturcture.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGsInfrasturcture/ThirdPersonDemoIMGsInfrasturcture.csproj",
+        "projectName": "ThirdPersonDemoIMGsInfrasturcture",
+        "projectPath": "/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGsInfrasturcture/ThirdPersonDemoIMGsInfrasturcture.csproj",
+        "packagesPath": "/Users/Alvaro/.nuget/packages/",
+        "outputPath": "/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGsInfrasturcture/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/Alvaro/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGsDomain/ThirdPersonDemoIMGsDomain.csproj": {
+                "projectPath": "/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGsDomain/ThirdPersonDemoIMGsDomain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

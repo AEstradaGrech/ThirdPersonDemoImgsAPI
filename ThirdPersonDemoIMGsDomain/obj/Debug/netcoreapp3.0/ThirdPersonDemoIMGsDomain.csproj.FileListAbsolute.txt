@@ -1,0 +1,8 @@
+/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGsDomain/bin/Debug/netcoreapp3.0/ThirdPersonDemoIMGsDomain.deps.json
+/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGsDomain/bin/Debug/netcoreapp3.0/ThirdPersonDemoIMGsDomain.dll
+/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGsDomain/bin/Debug/netcoreapp3.0/ThirdPersonDemoIMGsDomain.pdb
+/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGsDomain/obj/Debug/netcoreapp3.0/ThirdPersonDemoIMGsDomain.csprojAssemblyReference.cache
+/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGsDomain/obj/Debug/netcoreapp3.0/ThirdPersonDemoIMGsDomain.AssemblyInfoInputs.cache
+/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGsDomain/obj/Debug/netcoreapp3.0/ThirdPersonDemoIMGsDomain.AssemblyInfo.cs
+/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGsDomain/obj/Debug/netcoreapp3.0/ThirdPersonDemoIMGsDomain.dll
+/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGsDomain/obj/Debug/netcoreapp3.0/ThirdPersonDemoIMGsDomain.pdb
