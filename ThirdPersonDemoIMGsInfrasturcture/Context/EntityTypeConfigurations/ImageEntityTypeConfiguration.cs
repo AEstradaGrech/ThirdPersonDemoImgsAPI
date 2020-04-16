@@ -11,7 +11,19 @@ namespace ThirdPersonDemoIMGsInfrasturcture.Context.EntityTypeConfigurations
         {
             builder.HasKey(i => i.Id);
 
+            builder.HasIndex(i => i.ImgName)
+                   .IsUnique();
+
             builder.Property(i => i.ImgBytes)
+                   .IsRequired();
+
+            builder.Property(i => i.ImgName)
+                   .HasColumnName("Name")
+                   .HasMaxLength(20)
+                   .IsRequired();
+
+            builder.Property(i => i.CreationDate)
+                   .HasDefaultValue(DateTime.Now)
                    .IsRequired();
         }
     }

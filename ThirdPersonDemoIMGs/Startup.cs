@@ -14,6 +14,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using Swashbuckle;
+using ThirdPersonDemoIMGs.StartupConfigurationExtensions;
 using ThirdPersonDemoIMGsInfrasturcture.Context;
 
 namespace ThirdPersonDemoIMGs
@@ -43,6 +44,8 @@ namespace ThirdPersonDemoIMGs
             services.AddDbContext<ApplicationContext>(options => options.UseMySql(Configuration["DbConnectionString"]));
 
             services.AddControllers();
+
+            services.RegisterServices();
 
             services.AddSwaggerGen(config =>
             {
