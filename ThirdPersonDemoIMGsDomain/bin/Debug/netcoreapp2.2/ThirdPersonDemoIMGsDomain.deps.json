@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "ThirdPersonDemoIMGsDomain/1.0.0": {
+        "runtime": {
+          "ThirdPersonDemoIMGsDomain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ThirdPersonDemoIMGsDomain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

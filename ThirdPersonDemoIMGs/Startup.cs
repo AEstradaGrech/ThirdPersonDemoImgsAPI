@@ -4,16 +4,16 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using Microsoft.OpenApi.Models;
-using Swashbuckle;
+
+using Swashbuckle.AspNetCore.Swagger;
 using ThirdPersonDemoIMGs.StartupConfigurationExtensions;
 using ThirdPersonDemoIMGsInfrasturcture.Context;
 
@@ -41,40 +41,42 @@ namespace ThirdPersonDemoIMGs
                     .AllowCredentials());
             });
 
+            services.AddMvc();
+
             services.AddDbContext<ApplicationContext>(options => options.UseMySql(Configuration["DbConnectionString"]));
 
-            services.AddControllers();
+            //services.AddControllers();
 
             services.RegisterServices();
 
             services.AddSwaggerGen(config =>
             {
-                config.SwaggerDoc("v1", new OpenApiInfo { Title = "TPS IMGs", Version = "v1", });
-                config.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
+                config.SwaggerDoc("v1", new Info { Title = "TPS IMGs", Version = "v1", });
+                //config.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
             });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
+            //if (env.IsDevelopment())
+            //{
+            //    app.UseDeveloperExceptionPage();
+            //}
 
             app.UseSwagger();
             app.UseSwaggerUI(config => config.SwaggerEndpoint("/swagger/v1/swagger.json", "TPS IMGs"));
 
-            app.UseHttpsRedirection();
+           // app.UseHttpsRedirection();
 
-            app.UseRouting();
+            //app.UseRouting();
 
-            app.UseAuthorization();
+            //app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
+            //app.UseEndpoints(endpoints =>
+            //{
+            //    endpoints.MapControllers();
+            //});
 
             
         }

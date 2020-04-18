@@ -1,46 +1,40 @@
 ﻿<Properties StartupConfiguration="{BC6A7B16-C659-471E-881F-FA35F9069CF9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ThirdPersonDemoIMGs/StartupConfigurationExtensions/StartupConfigurationExtensions.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ThirdPersonDemoIMGs/appsettings.Development.json">
     <Files>
       <File FileName="ThirdPersonDemoIMGsDomain/Entities/Entity.cs" Line="6" Column="24" />
-      <File FileName="ThirdPersonDemoIMGsDomain/Entities/Image.cs" Line="9" Column="9" />
+      <File FileName="ThirdPersonDemoIMGsDomain/Entities/Image.cs" />
       <File FileName="ThirdPersonDemoIMGsDomain/IRepositories/IRepository.cs" />
       <File FileName="ThirdPersonDemoIMGsDomain/IRepositories/IUnitOfWork.cs" />
       <File FileName="ThirdPersonDemoIMGsInfrasturcture/Repositories/BaseRespository.cs" />
       <File FileName="ThirdPersonDemoIMGsInfrasturcture/Repositories/ImagesRepository.cs" />
       <File FileName="ThirdPersonDemoIMGsDomain/IRepositories/IImagesRepository.cs" />
       <File FileName="ThirdPersonDemoIMGsInfrasturcture/Context/ApplicationContext.cs" />
-      <File FileName="ThirdPersonDemoIMGsInfrasturcture/Context/EntityTypeConfigurations/ImageEntityTypeConfiguration.cs" Line="27" Column="33" />
-      <File FileName="ThirdPersonDemoIMGs/Startup.cs" Line="63" Column="65" />
-      <File FileName="ThirdPersonDemoIMGs/appsettings.Development.json" />
+      <File FileName="ThirdPersonDemoIMGsInfrasturcture/Context/EntityTypeConfigurations/ImageEntityTypeConfiguration.cs" />
+      <File FileName="ThirdPersonDemoIMGs/Startup.cs" />
+      <File FileName="ThirdPersonDemoIMGs/appsettings.Development.json" Line="11" Column="1" />
       <File FileName="ThirdPersonDemoIMGs/WeatherForecast.cs" />
-      <File FileName="ThirdPersonDemoIMGs/appsettings.json" Line="17" Column="4" />
-      <File FileName="ThirdPersonDemoIMGsInfrasturcture/Migrations/20200416181437_InitialMig.cs" Line="6" Column="39" />
-      <File FileName="ThirdPersonDemoIMGsInfrasturcture/Migrations/20200416181437_InitialMig.Designer.cs" Line="15" Column="49" />
-      <File FileName="ThirdPersonDemoIMGs/Program.cs" Line="18" Column="30" />
-      <File FileName="ThirdPersonDemoIMGs/Controllers/ImagesController.cs" Line="42" Column="33" />
-      <File FileName="ThirdPersonDemoIMGsDomain/Dtos/ImageDto.cs" Line="6" Column="32" />
-      <File FileName="ThirdPersonDemoIMGs/Services/ImageMgmtService.cs" Line="29" Column="62" />
-      <File FileName="ThirdPersonDemoIMGs/Services/Mappers/ImageMapperService.cs" Line="9" Column="58" />
-      <File FileName="ThirdPersonDemoIMGs/Services/Mappers/IImageMapperService.cs" Line="7" Column="68" />
-      <File FileName="ThirdPersonDemoIMGs/Services/IImageMgmtService.cs" Line="10" Column="39" />
-      <File FileName="ThirdPersonDemoIMGs/Services/Mappers/IMapperService.cs" Line="9" Column="37" />
-      <File FileName="ThirdPersonDemoIMGs/StartupConfigurationExtensions/StartupConfigurationExtensions.cs" Line="6" Column="25" />
+      <File FileName="ThirdPersonDemoIMGs/appsettings.json" />
+      <File FileName="ThirdPersonDemoIMGsInfrasturcture/Migrations/20200416181437_InitialMig.cs" />
+      <File FileName="ThirdPersonDemoIMGsInfrasturcture/Migrations/20200416181437_InitialMig.Designer.cs" />
+      <File FileName="ThirdPersonDemoIMGs/Program.cs" />
+      <File FileName="ThirdPersonDemoIMGs/Controllers/ImagesController.cs" />
+      <File FileName="ThirdPersonDemoIMGsDomain/Dtos/ImageDto.cs" />
+      <File FileName="ThirdPersonDemoIMGs/Services/ImageMgmtService.cs" />
+      <File FileName="ThirdPersonDemoIMGs/Services/Mappers/ImageMapperService.cs" />
+      <File FileName="ThirdPersonDemoIMGs/Services/Mappers/IImageMapperService.cs" />
+      <File FileName="ThirdPersonDemoIMGs/Services/IImageMgmtService.cs" />
+      <File FileName="ThirdPersonDemoIMGs/Services/Mappers/IMapperService.cs" />
+      <File FileName="ThirdPersonDemoIMGs/StartupConfigurationExtensions/StartupConfigurationExtensions.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ThirdPersonDemoIMGs" expanded="True">
             <Node name="ThirdPersonDemoIMGs" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="FrameworkReferences" expanded="True" />
-              </Node>
+              <Node name="Dependencies" expanded="True" />
               <Node name="Controllers" expanded="True" />
-              <Node name="Services" expanded="True">
-                <Node name="Mappers" expanded="True" />
-              </Node>
-              <Node name="StartupConfigurationExtensions" expanded="True">
-                <Node name="StartupConfigurationExtensions.cs" selected="True" />
-              </Node>
+              <Node name="Services" selected="True" />
+              <Node name="StartupConfigurationExtensions" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
             </Node>
             <Node name="ThirdPersonDemoIMGsDomain" expanded="True">
@@ -49,7 +43,9 @@
               <Node name="IRepositories" expanded="True" />
             </Node>
             <Node name="ThirdPersonDemoIMGsInfrasturcture" expanded="True">
-              <Node name="Dependencies" expanded="True" />
+              <Node name="Dependencies" expanded="True">
+                <Node name="ProjectDependencies" expanded="True" />
+              </Node>
               <Node name="Context" expanded="True">
                 <Node name="EntityTypeConfigurations" expanded="True" />
               </Node>
