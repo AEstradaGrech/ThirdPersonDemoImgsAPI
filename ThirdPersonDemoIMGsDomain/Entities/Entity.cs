@@ -5,8 +5,6 @@ namespace ThirdPersonDemoIMGsDomain.Entities
     {
         public virtual Guid Id { get; }
 
-        public Entity()
-        {
-        }
+       
     }
 }

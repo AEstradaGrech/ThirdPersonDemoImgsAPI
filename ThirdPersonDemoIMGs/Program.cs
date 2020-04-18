@@ -14,8 +14,11 @@ namespace ThirdPersonDemoIMGs
     {
         public static void Main(string[] args)
         {
+            var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+
             var config = new ConfigurationBuilder()
                              .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                             .AddJsonFile($"appsettings.{env}.json", optional: false, reloadOnChange: true)
                              .Build();
 
             CreateWebHostBuilder(args).Build().Run();
