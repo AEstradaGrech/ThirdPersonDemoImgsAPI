@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{BC6A7B16-C659-471E-881F-FA35F9069CF9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ThirdPersonDemoIMGs/appsettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ThirdPersonDemoIMGs/appsettings.Development.json">
     <Files>
       <File FileName="ThirdPersonDemoIMGsDomain/Entities/Entity.cs" Line="8" Column="8" />
       <File FileName="ThirdPersonDemoIMGsDomain/Entities/Image.cs" />
@@ -11,9 +11,9 @@
       <File FileName="ThirdPersonDemoIMGsInfrasturcture/Context/ApplicationContext.cs" />
       <File FileName="ThirdPersonDemoIMGsInfrasturcture/Context/EntityTypeConfigurations/ImageEntityTypeConfiguration.cs" />
       <File FileName="ThirdPersonDemoIMGs/Startup.cs" />
-      <File FileName="ThirdPersonDemoIMGs/appsettings.Development.json" Line="11" Column="1" />
+      <File FileName="ThirdPersonDemoIMGs/appsettings.Development.json" Line="14" Column="27" />
       <File FileName="ThirdPersonDemoIMGs/WeatherForecast.cs" />
-      <File FileName="ThirdPersonDemoIMGs/appsettings.json" Line="1" Column="1" />
+      <File FileName="ThirdPersonDemoIMGs/appsettings.json" />
       <File FileName="ThirdPersonDemoIMGsInfrasturcture/Migrations/20200416181437_InitialMig.cs" />
       <File FileName="ThirdPersonDemoIMGsInfrasturcture/Migrations/20200416181437_InitialMig.Designer.cs" />
       <File FileName="ThirdPersonDemoIMGs/Program.cs" />
@@ -34,7 +34,9 @@
               <Node name="Dependencies" expanded="True" />
               <Node name="Controllers" expanded="True" />
               <Node name="StartupConfigurationExtensions" expanded="True" />
-              <Node name="appsettings.json" expanded="True" selected="True" />
+              <Node name="appsettings.json" expanded="True">
+                <Node name="appsettings.Development.json" selected="True" />
+              </Node>
             </Node>
             <Node name="ThirdPersonDemoIMGsDomain" expanded="True">
               <Node name="Dtos" expanded="True" />

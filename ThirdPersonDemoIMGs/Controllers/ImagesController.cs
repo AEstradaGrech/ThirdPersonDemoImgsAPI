@@ -30,6 +30,7 @@ namespace ThirdPersonDemoIMGs.Controllers
         }
 
         [HttpPost]
+        [Route("post-img")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         public async Task<IActionResult>PostImage(ImageDto imgDto)
