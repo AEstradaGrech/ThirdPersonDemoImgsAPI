@@ -2,12 +2,13 @@
 using System.Threading.Tasks;
 using ThirdPersonDemoIMGsDomain.Entities;
 using ThirdPersonDemoIMGsDomain.IRepositories;
+using ThirdPersonDemoIMGsInfrasturcture.Context;
 
 namespace ThirdPersonDemoIMGsInfrasturcture.Repositories
 {
     public class ImagesRepository : BaseRespository<Image>, IImagesRepository
     {
-        public ImagesRepository()
+        public ImagesRepository(ApplicationContext context) : base(context)
         {
         }
 

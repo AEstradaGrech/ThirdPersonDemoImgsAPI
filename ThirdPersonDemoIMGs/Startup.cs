@@ -41,7 +41,8 @@ namespace ThirdPersonDemoIMGs
                     .AllowCredentials());
             });
 
-            services.AddMvc();
+            services.AddMvc()
+                    .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             services.AddDbContext<ApplicationContext>(options => options.UseMySql(Configuration["DbConnectionString"]));
 
@@ -63,6 +64,24 @@ namespace ThirdPersonDemoIMGs
             //{
             //    app.UseDeveloperExceptionPage();
             //}
+
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+                app.UseHsts();
+            }
+
+            app.UseCors("CorsPolicy");
+            //app.ConfigureGlobalExceptionHandler(Serilog.Log.Logger);
+
+            app.UseHttpsRedirection();
+
+            app.UseMvc();
+
 
             app.UseSwagger();
             app.UseSwaggerUI(config => config.SwaggerEndpoint("/swagger/v1/swagger.json", "TPS IMGs"));
