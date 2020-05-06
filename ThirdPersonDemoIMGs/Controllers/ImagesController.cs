@@ -11,22 +11,32 @@ using ThirdPersonDemoIMGsDomain.Dtos;
 
 namespace ThirdPersonDemoIMGs.Controllers
 {
-    [ApiController]
     [Route("api/v1/[controller]")]
+    [ApiController]    
     public class ImagesController : ControllerBase
     {
         private readonly IImageMgmtService _imageMgmtService;
 
-        public ImagesController(ImageMgmtService imageService)
+        public ImagesController(IImageMgmtService imageService)
         {
             _imageMgmtService = imageService;
         }
+
         // GET: api/values
         [HttpGet]
+        [Route("get-test-dto")]
+        [Produces("application/json")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
-        public async Task<IActionResult> GetTestValues()
+        public async Task<IActionResult> GetTestDto()
         {
-            return Ok("TestValue");
+            var testDto = new ImageDto
+            {
+                ImgName = "TestName",
+                ImgBase64 = "ABunchOfCharacters",
+                CreationDate = DateTime.Now
+            };
+
+            return Ok(testDto);
         }
 
         [HttpPost]
