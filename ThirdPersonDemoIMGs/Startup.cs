@@ -76,12 +76,11 @@ namespace ThirdPersonDemoIMGs
             }
 
             app.UseCors("CorsPolicy");
-            //app.ConfigureGlobalExceptionHandler(Serilog.Log.Logger);
+            app.ConfigureGlobalExceptionHandler();
 
             app.UseHttpsRedirection();
 
             app.UseMvc();
-
 
             app.UseSwagger();
             app.UseSwaggerUI(config => config.SwaggerEndpoint("/swagger/v1/swagger.json", "TPS IMGs"));

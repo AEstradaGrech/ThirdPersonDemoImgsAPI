@@ -5,7 +5,7 @@ namespace ThirdPersonDemoIMGsDomain.Dtos
     {
         public string ImgBase64 { get; set; }
         public string ImgName { get; set; }
-        public DateTime CreationDate { get; set; }
+        public DateTime? CreationDate { get; set; }
 
     }
 }

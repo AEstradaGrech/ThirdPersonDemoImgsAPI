@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{BC6A7B16-C659-471E-881F-FA35F9069CF9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ThirdPersonDemoIMGs/Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ThirdPersonDemoIMGsDomain/Dtos/ErrorDetail.cs">
     <Files>
       <File FileName="ThirdPersonDemoIMGsDomain/Entities/Entity.cs" Line="8" Column="8" />
       <File FileName="ThirdPersonDemoIMGsDomain/Entities/Image.cs" />
@@ -10,20 +10,21 @@
       <File FileName="ThirdPersonDemoIMGsDomain/IRepositories/IImagesRepository.cs" />
       <File FileName="ThirdPersonDemoIMGsInfrasturcture/Context/ApplicationContext.cs" />
       <File FileName="ThirdPersonDemoIMGsInfrasturcture/Context/EntityTypeConfigurations/ImageEntityTypeConfiguration.cs" />
-      <File FileName="ThirdPersonDemoIMGs/Startup.cs" Line="22" Column="25" />
+      <File FileName="ThirdPersonDemoIMGs/Startup.cs" />
       <File FileName="ThirdPersonDemoIMGs/appsettings.Development.json" />
-      <File FileName="ThirdPersonDemoIMGs/appsettings.json" />
+      <File FileName="ThirdPersonDemoIMGs/appsettings.json" Line="1" Column="1" />
       <File FileName="ThirdPersonDemoIMGsInfrasturcture/Migrations/20200416181437_InitialMig.cs" />
       <File FileName="ThirdPersonDemoIMGsInfrasturcture/Migrations/20200416181437_InitialMig.Designer.cs" />
       <File FileName="ThirdPersonDemoIMGs/Program.cs" />
-      <File FileName="ThirdPersonDemoIMGs/Controllers/ImagesController.cs" />
-      <File FileName="ThirdPersonDemoIMGsDomain/Dtos/ImageDto.cs" />
+      <File FileName="ThirdPersonDemoIMGs/Controllers/ImagesController.cs" Line="9" Column="23" />
+      <File FileName="ThirdPersonDemoIMGsDomain/Dtos/ImageDto.cs" Line="8" Column="25" />
       <File FileName="ThirdPersonDemoIMGs/Services/ImageMgmtService.cs" />
       <File FileName="ThirdPersonDemoIMGs/Services/Mappers/ImageMapperService.cs" />
       <File FileName="ThirdPersonDemoIMGs/Services/Mappers/IImageMapperService.cs" />
       <File FileName="ThirdPersonDemoIMGs/Services/IImageMgmtService.cs" />
       <File FileName="ThirdPersonDemoIMGs/Services/Mappers/IMapperService.cs" />
       <File FileName="ThirdPersonDemoIMGs/StartupConfigurationExtensions/StartupConfigurationExtensions.cs" />
+      <File FileName="ThirdPersonDemoIMGsDomain/Dtos/ErrorDetail.cs" Line="6" Column="22" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -32,11 +33,16 @@
             <Node name="ThirdPersonDemoIMGs" expanded="True">
               <Node name="Dependencies" expanded="True" />
               <Node name="Controllers" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="Mappers" expanded="True" />
+              </Node>
               <Node name="StartupConfigurationExtensions" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
-              <Node name="Startup.cs" selected="True" />
             </Node>
             <Node name="ThirdPersonDemoIMGsDomain" expanded="True">
+              <Node name="Dtos" expanded="True">
+                <Node name="ErrorDetail.cs" selected="True" />
+              </Node>
               <Node name="Entities" expanded="True" />
               <Node name="IRepositories" expanded="True" />
             </Node>
@@ -60,8 +66,10 @@
   <MonoDevelop.Ide.ItemProperties.ThirdPersonDemoIMGs PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/Controllers/ImagesController.cs" relfile="ThirdPersonDemoIMGs/Controllers/ImagesController.cs" line="48" column="1" />
-      <Breakpoint file="/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/Controllers/ImagesController.cs" relfile="ThirdPersonDemoIMGs/Controllers/ImagesController.cs" line="32" column="1" />
+      <Breakpoint file="/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/Controllers/ImagesController.cs" relfile="ThirdPersonDemoIMGs/Controllers/ImagesController.cs" line="50" column="1" />
+      <Breakpoint file="/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/Controllers/ImagesController.cs" relfile="ThirdPersonDemoIMGs/Controllers/ImagesController.cs" line="49" column="1" />
+      <Breakpoint file="/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/Services/ImageMgmtService.cs" relfile="ThirdPersonDemoIMGs/Services/ImageMgmtService.cs" line="31" column="1" />
+      <Breakpoint file="/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/Controllers/ImagesController.cs" relfile="ThirdPersonDemoIMGs/Controllers/ImagesController.cs" line="33" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
