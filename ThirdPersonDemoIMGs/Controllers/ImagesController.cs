@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ThirdPersonDemoIMGs.Services;
 using ThirdPersonDemoIMGsDomain.Dtos;
+using Newtonsoft.Json;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -41,9 +42,10 @@ namespace ThirdPersonDemoIMGs.Controllers
 
         [HttpPost]
         [Route("post-img")]
+        [Produces("application/json")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
-        public async Task<IActionResult>PostImage(ImageDto imgDto)
+        public async Task<IActionResult>PostImage([FromBody]ImageDto imgDto)
         {
             var response = await _imageMgmtService.PostImage(imgDto);
 
