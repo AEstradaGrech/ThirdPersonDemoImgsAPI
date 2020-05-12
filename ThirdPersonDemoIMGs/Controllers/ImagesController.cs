@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using ThirdPersonDemoIMGs.Services;
 using ThirdPersonDemoIMGsDomain.Dtos;
 using Newtonsoft.Json;
+using ThirdPersonDemoIMGsDomain.Enums;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -40,15 +41,27 @@ namespace ThirdPersonDemoIMGs.Controllers
             return Ok(testDto);
         }
 
+        [HttpGet]
+        [Route("get-by-name-and-category")]
+        [Produces("application/json")]
+        [ProducesResponseType((int)HttpStatusCode.OK)]
+        public async Task<IActionResult> GetByNameAndCategory([FromQuery]string imgName, [FromQuery]ImgCategory category)
+        {
+            var response = await _imageMgmtService.GetByNameAndCategory(imgName, category);
+
+            if(response != null)
+                return Ok(response);
+
+            return BadRequest();
+        }
+
         [HttpPost]
         [Route("post-img")]
         [Produces("application/json")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         public async Task<IActionResult>PostImage([FromBody]ImageDto imgDto)
-        {
-            //return Ok(imgDto);
-
+        {            
             var response = await _imageMgmtService.PostImage(imgDto);
 
             if (response != null)

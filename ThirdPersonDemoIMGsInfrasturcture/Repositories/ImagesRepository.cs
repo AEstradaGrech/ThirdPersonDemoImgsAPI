@@ -3,20 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ThirdPersonDemoIMGsDomain.Entities;
+using ThirdPersonDemoIMGsDomain.Enums;
 using ThirdPersonDemoIMGsDomain.IRepositories;
+using ThirdPersonDemoIMGsDomain.Specifications;
 using ThirdPersonDemoIMGsInfrasturcture.Context;
 
 namespace ThirdPersonDemoIMGsInfrasturcture.Repositories
 {
     public class ImagesRepository : BaseRespository<Image>, IImagesRepository
     {
-        public ImagesRepository(ApplicationContext context) : base(context)
+        private readonly ISpecificationFactory _specFactory;
+
+        public ImagesRepository(ApplicationContext context, ISpecificationFactory specFactory) : base(context)
         {
+            _specFactory = specFactory;
         }   
 
         public async Task<IEnumerable<Image>> GetAllImages()
         {
             return DbSet.AsEnumerable();
-        }    
+        }
+
+        public async Task<IEnumerable<Image>> GetByNameAndCategory(string name, ImgCategory category)
+        {
+            var spec = await _specFactory.GetNameAndCategorySpec(name, category);
+
+            return DbSet.Where(spec.SatisfiedBy())
+                        .AsEnumerable();
+        }
     }
 }

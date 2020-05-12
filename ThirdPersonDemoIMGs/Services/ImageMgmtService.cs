@@ -5,6 +5,7 @@ using Omu.ValueInjecter;
 using ThirdPersonDemoIMGs.Services.Mappers;
 using ThirdPersonDemoIMGsDomain.Dtos;
 using ThirdPersonDemoIMGsDomain.Entities;
+using ThirdPersonDemoIMGsDomain.Enums;
 using ThirdPersonDemoIMGsDomain.IRepositories;
 
 namespace ThirdPersonDemoIMGs.Services
@@ -24,6 +25,11 @@ namespace ThirdPersonDemoIMGs.Services
         public async Task<IEnumerable<ImageDto>> GetAllImages()
         {           
             return await _mapper.MapManyToDto(await _imagesRespository.GetAllImages());
+        }
+
+        public async Task<IEnumerable<ImageDto>> GetByNameAndCategory(string name, ImgCategory category)
+        {
+            return await _mapper.MapManyToDto(await _imagesRespository.GetByNameAndCategory(name, category));
         }
 
         public async Task<ImageDto> PostImage(ImageDto imgDto)
