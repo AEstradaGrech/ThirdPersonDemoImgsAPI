@@ -16,6 +16,7 @@ using Microsoft.Extensions.Options;
 using Swashbuckle.AspNetCore.Swagger;
 using ThirdPersonDemoIMGs.StartupConfigurationExtensions;
 using ThirdPersonDemoIMGsInfrasturcture.Context;
+using ThirdPersonDemoIMGsInfrasturcture.Helpers;
 
 namespace ThirdPersonDemoIMGs
 {
@@ -42,7 +43,14 @@ namespace ThirdPersonDemoIMGs
             });
 
             services.AddMvc()
-                    .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+                    .SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
+                    .AddJsonOptions(options =>
+                    {
+                        options.SerializerSettings.DateTimeZoneHandling = Newtonsoft.Json.DateTimeZoneHandling.Utc;
+                        options.SerializerSettings.DateFormatString = "yyyy'-'MM'-'dd'T'HH':'mm':'ssZ";
+                    }); 
+
+            StaticStrings.ConnectionString = Configuration["DbConnectionString"];
 
             services.AddDbContext<ApplicationContext>(options => options.UseMySql(Configuration["DbConnectionString"]));
 
