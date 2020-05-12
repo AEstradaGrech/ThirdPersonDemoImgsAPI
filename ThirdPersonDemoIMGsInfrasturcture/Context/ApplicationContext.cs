@@ -27,7 +27,7 @@ namespace ThirdPersonDemoIMGsInfrasturcture.Context
             return await base.SaveChangesAsync() > 0;
         }
 
-        DbSet<Image> Images { get; set; }
+        DbSet<Image> Images { get; set;}
 
     }
 }

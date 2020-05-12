@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using ThirdPersonDemoIMGsDomain.Entities;
 using ThirdPersonDemoIMGsDomain.IRepositories;
@@ -10,11 +12,11 @@ namespace ThirdPersonDemoIMGsInfrasturcture.Repositories
     {
         public ImagesRepository(ApplicationContext context) : base(context)
         {
-        }
+        }   
 
-        public async Task<Image> GetAllImages()
+        public async Task<IEnumerable<Image>> GetAllImages()
         {
-            throw new NotImplementedException();
-        }
+            return DbSet.AsEnumerable();
+        }    
     }
 }

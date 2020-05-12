@@ -14,28 +14,26 @@ namespace ThirdPersonDemoIMGsInfrasturcture.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.3")
+                .HasAnnotation("ProductVersion", "2.2.0-rtm-35687")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             modelBuilder.Entity("ThirdPersonDemoIMGsDomain.Entities.Image", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("char(36)");
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("Category");
 
                     b.Property<DateTime>("CreationDate")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime(6)")
-                        .HasDefaultValue(new DateTime(2020, 4, 16, 22, 24, 35, 263, DateTimeKind.Local).AddTicks(6320));
+                        .HasDefaultValue(new DateTime(2020, 5, 12, 17, 10, 32, 264, DateTimeKind.Local).AddTicks(6510));
 
                     b.Property<byte[]>("ImgBytes")
-                        .IsRequired()
-                        .HasColumnType("longblob");
+                        .IsRequired();
 
                     b.Property<string>("ImgName")
                         .IsRequired()
                         .HasColumnName("Name")
-                        .HasColumnType("varchar(20) CHARACTER SET utf8mb4")
                         .HasMaxLength(20);
 
                     b.HasKey("Id");

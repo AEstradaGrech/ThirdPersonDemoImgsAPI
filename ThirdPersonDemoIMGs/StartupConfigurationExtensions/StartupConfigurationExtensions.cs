@@ -3,11 +3,13 @@ using System.Net;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using ThirdPersonDemoIMGs.Services;
 using ThirdPersonDemoIMGs.Services.Mappers;
 using ThirdPersonDemoIMGsDomain.Dtos;
 using ThirdPersonDemoIMGsDomain.IRepositories;
+using ThirdPersonDemoIMGsInfrasturcture.Context;
 using ThirdPersonDemoIMGsInfrasturcture.Repositories;
 
 namespace ThirdPersonDemoIMGs.StartupConfigurationExtensions
@@ -46,6 +48,28 @@ namespace ThirdPersonDemoIMGs.StartupConfigurationExtensions
                     }
                 });
             });
+
+            return app;
+        }
+
+        public static IApplicationBuilder ManageMigrations(this IApplicationBuilder app)
+        {
+
+            using (var scope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
+            {
+                var context = scope.ServiceProvider.GetRequiredService<ApplicationContext>();
+
+                try
+                {
+                    context.Database.Migrate();
+                }
+                catch(Exception ex)
+                {
+                    Console.Write(ex.Message);
+                }
+
+                
+            }
 
             return app;
         }
