@@ -22,8 +22,8 @@ namespace ThirdPersonDemoIMGs.Services
         }
 
         public async Task<IEnumerable<ImageDto>> GetAllImages()
-        {
-            throw new NotImplementedException();
+        {           
+            return await _mapper.MapManyToDto(await _imagesRespository.GetAllImages());
         }
 
         public async Task<ImageDto> PostImage(ImageDto imgDto)

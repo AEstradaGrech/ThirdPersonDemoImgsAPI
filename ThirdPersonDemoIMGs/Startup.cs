@@ -83,15 +83,24 @@ namespace ThirdPersonDemoIMGs
                 app.UseHsts();
             }
 
-            app.UseCors("CorsPolicy");
-            app.ConfigureGlobalExceptionHandler();
+            
 
-            app.UseHttpsRedirection();
+            //app.UseCors("CorsPolicy");
 
-            app.UseMvc();
+            app.UseCors("CorsPolicy")
+               .ConfigureGlobalExceptionHandler()
+               .ManageMigrations()
+               .UseHttpsRedirection()
+               .UseMvc()
+               .UseSwagger()
+               .UseSwaggerUI(config => config.SwaggerEndpoint("/swagger/v1/swagger.json", "TPS IMGs")); ;
 
-            app.UseSwagger();
-            app.UseSwaggerUI(config => config.SwaggerEndpoint("/swagger/v1/swagger.json", "TPS IMGs"));
+            //app.UseHttpsRedirection();
+
+            //app.UseMvc();
+
+            //app.UseSwagger();
+            //app.UseSwaggerUI(config => config.SwaggerEndpoint("/swagger/v1/swagger.json", "TPS IMGs"));
 
            // app.UseHttpsRedirection();
 
