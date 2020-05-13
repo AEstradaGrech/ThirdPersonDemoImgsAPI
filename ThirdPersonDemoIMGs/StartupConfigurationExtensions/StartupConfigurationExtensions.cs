@@ -9,6 +9,7 @@ using ThirdPersonDemoIMGs.Services;
 using ThirdPersonDemoIMGs.Services.Mappers;
 using ThirdPersonDemoIMGsDomain.Dtos;
 using ThirdPersonDemoIMGsDomain.IRepositories;
+using ThirdPersonDemoIMGsDomain.Specifications;
 using ThirdPersonDemoIMGsInfrasturcture.Context;
 using ThirdPersonDemoIMGsInfrasturcture.Repositories;
 
@@ -21,6 +22,7 @@ namespace ThirdPersonDemoIMGs.StartupConfigurationExtensions
             services.AddScoped<IImageMgmtService, ImageMgmtService>();
             services.AddScoped<IImageMapperService, ImageMapperService>();
             services.AddScoped<IImagesRepository, ImagesRepository>();
+            services.AddScoped<ISpecificationFactory, SpecificationFactory>();
 
             return services;
         }
