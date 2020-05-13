@@ -8,6 +8,7 @@ namespace ThirdPersonDemoIMGsDomain.Entities
         public byte[] ImgBytes { get; set; }
         public string ImgName { get; set; }
         public DateTime CreationDate { get; set; }
-        public ImgCategory Category { get; set;}        
+        public ImgCategory Category { get; set;}
+        public string GameStudioName { get; set; }
     }
 }
