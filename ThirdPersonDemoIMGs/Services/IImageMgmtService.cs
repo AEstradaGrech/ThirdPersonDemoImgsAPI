@@ -13,5 +13,6 @@ namespace ThirdPersonDemoIMGs.Services
         Task<IEnumerable<ImageDto>> GetAllImages();
         Task<IEnumerable<ImageDto>> GetByNameAndCategory(string name, ImgCategory category);
         Task<ImageDto> PostImage(ImageDto ImgDto);
+        Task<bool> CheckImageNameExists(string imgName);
     }
 }

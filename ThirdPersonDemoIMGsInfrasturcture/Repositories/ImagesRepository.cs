@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using ThirdPersonDemoIMGsDomain.Entities;
 using ThirdPersonDemoIMGsDomain.Enums;
 using ThirdPersonDemoIMGsDomain.IRepositories;
@@ -17,7 +18,12 @@ namespace ThirdPersonDemoIMGsInfrasturcture.Repositories
         public ImagesRepository(ApplicationContext context, ISpecificationFactory specFactory) : base(context)
         {
             _specFactory = specFactory;
-        }   
+        }
+
+        public async Task<bool> CheckImageNameExists(string imgName)
+        {
+            return await DbSet.AnyAsync(img => img.ImgName == imgName);
+        }
 
         public async Task<IEnumerable<Image>> GetAllImages()
         {
