@@ -55,6 +55,16 @@ namespace ThirdPersonDemoIMGs.Controllers
             return BadRequest();
         }
 
+        [HttpGet]
+        [Route("check-img-name-exists")]
+        [Produces("application/json")]
+        [ProducesResponseType((int)HttpStatusCode.OK)]
+        public async Task<IActionResult> GheckImageNameExists([FromQuery]string imgName)
+        {
+            return Ok(await _imageMgmtService.CheckImageNameExists(imgName));
+        }
+
+
         [HttpPost]
         [Route("post-img")]
         [Produces("application/json")]

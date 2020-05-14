@@ -22,6 +22,11 @@ namespace ThirdPersonDemoIMGs.Services
             _mapper = mapper;
         }
 
+        public async Task<bool> CheckImageNameExists(string imgName)
+        {
+            return await _imagesRespository.CheckImageNameExists(imgName);
+        }
+
         public async Task<IEnumerable<ImageDto>> GetAllImages()
         {           
             return await _mapper.MapManyToDto(await _imagesRespository.GetAllImages());

@@ -11,5 +11,6 @@ namespace ThirdPersonDemoIMGsDomain.IRepositories
     {
         Task<IEnumerable<Image>> GetAllImages();
         Task<IEnumerable<Image>> GetByNameAndCategory(string name, ImgCategory category);
+        Task<bool> CheckImageNameExists(string imgName);
     }
 }
