@@ -10,7 +10,8 @@ namespace ThirdPersonDemoIMGsDomain.IRepositories
     public interface IImagesRepository : IRepository<Image>
     {
         Task<IEnumerable<Image>> GetAllImages();
-        Task<IEnumerable<Image>> GetByNameAndCategory(string name, ImgCategory category);
+        Task<Image> GetByNameAndCategory(string name, ImgCategory category);
         Task<bool> CheckImageNameExists(string imgName);
+        Task<IEnumerable<Image>> GetByCategory(ImgCategory category);
     }
 }

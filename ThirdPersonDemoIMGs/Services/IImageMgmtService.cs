@@ -11,7 +11,8 @@ namespace ThirdPersonDemoIMGs.Services
     public interface IImageMgmtService
     {
         Task<IEnumerable<ImageDto>> GetAllImages();
-        Task<IEnumerable<ImageDto>> GetByNameAndCategory(string name, ImgCategory category);
+        Task<ImageDto> GetByNameAndCategory(string name, ImgCategory category);
+        Task<IEnumerable<ImageDto>> GetByCategory(ImgCategory category);
         Task<ImageDto> PostImage(ImageDto ImgDto);
         Task<bool> CheckImageNameExists(string imgName);
     }

@@ -30,12 +30,20 @@ namespace ThirdPersonDemoIMGsInfrasturcture.Repositories
             return DbSet.AsEnumerable();
         }
 
-        public async Task<IEnumerable<Image>> GetByNameAndCategory(string name, ImgCategory category)
+        public async Task<IEnumerable<Image>> GetByCategory(ImgCategory category)
+        {
+            var result = await DbSet.Where(img => img.Category == category).ToListAsync();
+
+            return DbSet.Where(img => img.Category == category)
+                        .AsEnumerable();
+        }
+
+        public async Task<Image> GetByNameAndCategory(string name, ImgCategory category)
         {
             var spec = await _specFactory.GetNameAndCategorySpec(name, category);
 
-            return DbSet.Where(spec.SatisfiedBy())
-                        .AsEnumerable();
+            return await DbSet.Where(spec.SatisfiedBy())
+                              .FirstAsync();
         }
     }
 }
