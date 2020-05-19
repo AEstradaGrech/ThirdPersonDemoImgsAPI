@@ -47,9 +47,26 @@ namespace ThirdPersonDemoIMGs.Controllers
         [ProducesResponseType((int)HttpStatusCode.OK)]
         public async Task<IActionResult> GetByNameAndCategory([FromQuery]string imgName, [FromQuery]ImgCategory category)
         {
+            int cat = (int)category;
+
+
             var response = await _imageMgmtService.GetByNameAndCategory(imgName, category);
 
             if(response != null)
+                return Ok(response);
+
+            return BadRequest();
+        }
+
+        [HttpGet]
+        [Route("get-by-category")]
+        [Produces("application/json")]
+        [ProducesResponseType((int)HttpStatusCode.OK)]
+        public async Task<IActionResult> GetByCategory([FromQuery]ImgCategory category)
+        {
+            var response = await _imageMgmtService.GetByCategory(category);
+
+            if (response != null)
                 return Ok(response);
 
             return BadRequest();

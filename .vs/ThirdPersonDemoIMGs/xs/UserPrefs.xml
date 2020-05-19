@@ -1,13 +1,13 @@
 ﻿<Properties StartupConfiguration="{BC6A7B16-C659-471E-881F-FA35F9069CF9}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="ThirdPersonDemoIMGsDomain/Entities/Image.cs">
     <Files>
+      <File FileName="ThirdPersonDemoIMGs/Services/ImageMgmtService.cs" Line="37" Column="1" IsPinned="True" />
+      <File FileName="ThirdPersonDemoIMGsDomain/IRepositories/IUnitOfWork.cs" IsPinned="True" />
       <File FileName="ThirdPersonDemoIMGsDomain/Entities/Entity.cs" Line="6" Column="45" />
-      <File FileName="ThirdPersonDemoIMGsDomain/Entities/Image.cs" Line="12" Column="44" />
-      <File FileName="ThirdPersonDemoIMGsDomain/IRepositories/IRepository.cs" />
-      <File FileName="ThirdPersonDemoIMGsDomain/IRepositories/IUnitOfWork.cs" />
-      <File FileName="ThirdPersonDemoIMGsInfrasturcture/Repositories/BaseRespository.cs" />
-      <File FileName="ThirdPersonDemoIMGsInfrasturcture/Repositories/ImagesRepository.cs" />
-      <File FileName="ThirdPersonDemoIMGsDomain/IRepositories/IImagesRepository.cs" />
+      <File FileName="ThirdPersonDemoIMGsDomain/IRepositories/IRepository.cs" Line="1" Column="1" />
+      <File FileName="ThirdPersonDemoIMGsInfrasturcture/Repositories/BaseRespository.cs" Line="25" Column="1" />
+      <File FileName="ThirdPersonDemoIMGsInfrasturcture/Repositories/ImagesRepository.cs" Line="37" Column="55" />
+      <File FileName="ThirdPersonDemoIMGsDomain/IRepositories/IImagesRepository.cs" Line="15" Column="70" />
       <File FileName="ThirdPersonDemoIMGsInfrasturcture/Context/ApplicationContext.cs" />
       <File FileName="ThirdPersonDemoIMGsInfrasturcture/Context/EntityTypeConfigurations/ImageEntityTypeConfiguration.cs" />
       <File FileName="ThirdPersonDemoIMGs/Startup.cs" />
@@ -16,23 +16,22 @@
       <File FileName="ThirdPersonDemoIMGsInfrasturcture/Migrations/20200416181437_InitialMig.cs" />
       <File FileName="ThirdPersonDemoIMGsInfrasturcture/Migrations/20200416181437_InitialMig.Designer.cs" />
       <File FileName="ThirdPersonDemoIMGs/Program.cs" />
-      <File FileName="ThirdPersonDemoIMGs/Controllers/ImagesController.cs" />
-      <File FileName="ThirdPersonDemoIMGsDomain/Dtos/ImageDto.cs" />
-      <File FileName="ThirdPersonDemoIMGs/Services/ImageMgmtService.cs" />
-      <File FileName="ThirdPersonDemoIMGs/Services/Mappers/ImageMapperService.cs" />
+      <File FileName="ThirdPersonDemoIMGs/Controllers/ImagesController.cs" Line="90" Column="66" />
+      <File FileName="ThirdPersonDemoIMGsDomain/Dtos/ImageDto.cs" Line="8" Column="18" />
       <File FileName="ThirdPersonDemoIMGs/Services/Mappers/IImageMapperService.cs" />
-      <File FileName="ThirdPersonDemoIMGs/Services/IImageMgmtService.cs" />
+      <File FileName="ThirdPersonDemoIMGs/Services/IImageMgmtService.cs" Line="15" Column="72" />
       <File FileName="ThirdPersonDemoIMGs/Services/Mappers/IMapperService.cs" />
       <File FileName="ThirdPersonDemoIMGs/StartupConfigurationExtensions/StartupConfigurationExtensions.cs" />
       <File FileName="ThirdPersonDemoIMGsDomain/Dtos/ErrorDetail.cs" />
       <File FileName="ThirdPersonDemoIMGsInfrasturcture/Helpers/StaticStrings.cs" />
-      <File FileName="ThirdPersonDemoIMGsDomain/Enums/ImgCategory.cs" />
+      <File FileName="ThirdPersonDemoIMGsDomain/Enums/ImgCategory.cs" Line="10" Column="21" />
       <File FileName="ThirdPersonDemoIMGsInfrasturcture/Migrations/20200512151033_IdSetterAndCategoryId.cs" />
       <File FileName="ThirdPersonDemoIMGsInfrasturcture/Migrations/20200512151033_IdSetterAndCategoryId.Designer.cs" />
       <File FileName="ThirdPersonDemoIMGsDomain/Specifications/ISpecificationFactory.cs" />
       <File FileName="ThirdPersonDemoIMGsDomain/Specifications/Specification.cs" />
       <File FileName="ThirdPersonDemoIMGsDomain/Specifications/ISpecification.cs" />
-      <File FileName="ThirdPersonDemoIMGsDomain/Specifications/ImgNameAndCategorySpec.cs" />
+      <File FileName="ThirdPersonDemoIMGsDomain/Specifications/ImgNameAndCategorySpec.cs" Line="25" Column="1" />
+      <File FileName="ThirdPersonDemoIMGsDomain/Entities/Image.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -61,6 +60,7 @@
               <Node name="Dependencies" expanded="True">
                 <Node name="ProjectDependencies" expanded="True" />
               </Node>
+              <Node name="Context" expanded="True" />
               <Node name="Helpers" expanded="True" />
               <Node name="Repositories" expanded="True" />
             </Node>
@@ -73,7 +73,10 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.ThirdPersonDemoIMGs PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGsInfrasturcture/Repositories/BaseRespository.cs" relfile="ThirdPersonDemoIMGsInfrasturcture/Repositories/BaseRespository.cs" line="25" column="1" />
+      <Breakpoint file="/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/Controllers/ImagesController.cs" relfile="ThirdPersonDemoIMGs/Controllers/ImagesController.cs" line="92" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

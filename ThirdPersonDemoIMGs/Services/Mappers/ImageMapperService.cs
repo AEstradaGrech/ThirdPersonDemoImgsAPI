@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Omu.ValueInjecter;
 using ThirdPersonDemoIMGsDomain.Dtos;
 using ThirdPersonDemoIMGsDomain.Entities;
+using ThirdPersonDemoIMGsDomain.Enums;
 
 namespace ThirdPersonDemoIMGs.Services.Mappers
 {
@@ -13,9 +14,11 @@ namespace ThirdPersonDemoIMGs.Services.Mappers
      
         public async Task<ImageDto> MapToDto(Image entity)
         {
-            var dto = new ImageDto();
+            var dto = new ImageDto();            
 
             dto = (ImageDto)dto.InjectFrom(entity);
+
+            //dto.Category = (ImgCategory)entity.Category;
 
             dto.ImgBase64 = Convert.ToBase64String(entity.ImgBytes);
 
@@ -24,9 +27,11 @@ namespace ThirdPersonDemoIMGs.Services.Mappers
 
         public async Task<Image> MapToEntity(ImageDto dto)
         {
-            var entity = new Image();
+            var entity = new Image();            
 
-            entity = (Image)entity.InjectFrom(dto);            
+            entity = (Image)entity.InjectFrom(dto);
+
+            //entity.Category = (int)dto.Category;
 
             string[] base64Splitted = dto.ImgBase64.Split(',');
 

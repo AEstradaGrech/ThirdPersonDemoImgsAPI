@@ -6,6 +6,7 @@ namespace ThirdPersonDemoIMGsDomain.Enums
     {
         MainMenu = 0,
         GamesCatalogue = 1,
-        GameDetail = 2
+        GameDetail = 2,
+        SignForm = 3
     }
 }

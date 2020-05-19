@@ -32,9 +32,14 @@ namespace ThirdPersonDemoIMGs.Services
             return await _mapper.MapManyToDto(await _imagesRespository.GetAllImages());
         }
 
-        public async Task<IEnumerable<ImageDto>> GetByNameAndCategory(string name, ImgCategory category)
+        public async Task<IEnumerable<ImageDto>> GetByCategory(ImgCategory category)
         {
-            return await _mapper.MapManyToDto(await _imagesRespository.GetByNameAndCategory(name, category));
+            return await _mapper.MapManyToDto(await _imagesRespository.GetByCategory(category));
+        }
+
+        public async Task<ImageDto> GetByNameAndCategory(string name, ImgCategory category)
+        {
+            return await _mapper.MapToDto(await _imagesRespository.GetByNameAndCategory(name, category));
         }
 
         public async Task<ImageDto> PostImage(ImageDto imgDto)
