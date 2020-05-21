@@ -1,17 +1,23 @@
-﻿<Properties StartupConfiguration="{BC6A7B16-C659-471E-881F-FA35F9069CF9}|Default">
+﻿<Properties StartupConfiguration="{BC6A7B16-C659-471E-881F-FA35F9069CF9}|Deliveries">
   <MonoDevelop.Ide.Workbench ActiveDocument="ThirdPersonDemoIMGs/Startup.cs">
     <Files>
-      <File FileName="ThirdPersonDemoIMGs/StartupConfigurationExtensions/StartupConfigurationExtensions.cs" Line="105" Column="38" />
-      <File FileName="ThirdPersonDemoIMGsInfrasturcture/Helpers/ServiceConfig.cs" Line="9" Column="46" />
-      <File FileName="ThirdPersonDemoIMGsInfrasturcture/Helpers/ServiceDiscoveryHostedService.cs" Line="39" Column="93" />
-      <File FileName="ThirdPersonDemoIMGs/Startup.cs" Line="1" Column="1" />
+      <File FileName="ThirdPersonDemoIMGs/appsettings.json" Line="16" Column="4" />
+      <File FileName="ThirdPersonDemoIMGs/appsettings.Development.json" Line="16" Column="4" />
+      <File FileName="ThirdPersonDemoIMGs/appsettings.production.json" />
+      <File FileName="ThirdPersonDemoIMGs/StartupConfigurationExtensions/StartupConfigurationExtensions.cs" />
+      <File FileName="ThirdPersonDemoIMGsInfrasturcture/Helpers/ServiceDiscoveryHostedService.cs" />
+      <File FileName="ThirdPersonDemoIMGs/Properties/launchSettings.json" />
+      <File FileName="ThirdPersonDemoIMGs/Startup.cs" Line="88" Column="29" />
+      <File FileName="ThirdPersonDemoIMGs/Program.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ThirdPersonDemoIMGs" expanded="True">
             <Node name="ThirdPersonDemoIMGs" expanded="True">
+              <Node name="Properties" expanded="True" />
               <Node name="StartupConfigurationExtensions" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
               <Node name="Startup.cs" selected="True" />
             </Node>
             <Node name="ThirdPersonDemoIMGsInfrasturcture" expanded="True">

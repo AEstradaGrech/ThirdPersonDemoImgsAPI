@@ -18,5 +18,5 @@ RUN dotnet publish ThirdPersonDemoIMGs.sln -c Release -o /app
 FROM mcr.microsoft.com/dotnet/core/aspnet:2.2
 WORKDIR /app
 COPY --from=base /app .
-EXPOSE 4220
+EXPOSE 80
 ENTRYPOINT ["dotnet", "ThirdPersonDemoIMGs.dll"]

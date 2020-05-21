@@ -6,6 +6,11 @@ using Consul;
 
 namespace ThirdPersonDemoIMGsInfrasturcture.Helpers
 {
+    /// <summary>
+    /// registers the service in Consul
+    /// by overriding previous information about service if such existed.
+    /// If the service is shutting down it deregisters service from Consul.
+    /// </summary>
     public class ServiceDiscoveryHostedService : IHostedService
     {
         private ServiceConfig _serviceConfig;
