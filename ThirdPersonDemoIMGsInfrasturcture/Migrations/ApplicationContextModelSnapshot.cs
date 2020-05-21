@@ -26,7 +26,7 @@ namespace ThirdPersonDemoIMGsInfrasturcture.Migrations
 
                     b.Property<DateTime>("CreationDate")
                         .ValueGeneratedOnAdd()
-                        .HasDefaultValue(new DateTime(2020, 5, 20, 0, 25, 50, 727, DateTimeKind.Local).AddTicks(6850));
+                        .HasDefaultValue(new DateTime(2020, 5, 20, 23, 46, 22, 835, DateTimeKind.Local).AddTicks(8580));
 
                     b.Property<string>("GameStudioName");
 
@@ -37,6 +37,8 @@ namespace ThirdPersonDemoIMGsInfrasturcture.Migrations
                         .IsRequired()
                         .HasColumnName("Name")
                         .HasMaxLength(20);
+
+                    b.Property<Guid>("UserGuid");
 
                     b.HasKey("Id");
 

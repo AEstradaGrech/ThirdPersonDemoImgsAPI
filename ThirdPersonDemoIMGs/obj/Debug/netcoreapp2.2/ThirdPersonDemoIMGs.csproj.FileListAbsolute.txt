@@ -19,3 +19,4 @@
 /Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/obj/Debug/netcoreapp2.2/ThirdPersonDemoIMGs.csproj.CopyComplete
 /Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/obj/Debug/netcoreapp2.2/ThirdPersonDemoIMGs.dll
 /Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/obj/Debug/netcoreapp2.2/ThirdPersonDemoIMGs.pdb
+/Volumes/TOSHIBA EXT/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/ThirdPersonDemoIMGs/bin/Debug/netcoreapp2.2/appsettings.production.json

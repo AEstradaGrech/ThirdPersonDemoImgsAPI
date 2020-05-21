@@ -46,10 +46,7 @@ namespace ThirdPersonDemoIMGs.Controllers
         [Produces("application/json")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         public async Task<IActionResult> GetByNameAndCategory([FromQuery]string imgName, [FromQuery]ImgCategory category)
-        {
-            int cat = (int)category;
-
-
+        {           
             var response = await _imageMgmtService.GetByNameAndCategory(imgName, category);
 
             if(response != null)
@@ -71,6 +68,21 @@ namespace ThirdPersonDemoIMGs.Controllers
 
             return BadRequest();
         }
+
+        [HttpGet]
+        [Route("get-user-img")]
+        [Produces("application/json")]
+        [ProducesResponseType((int)HttpStatusCode.OK)]
+        public async Task<IActionResult> GetUserImage([FromQuery]Guid userGuid)
+        {
+            var response = await _imageMgmtService.GetUserImage(userGuid);
+
+            if (response != null)
+                return Ok(response);
+
+            return BadRequest();
+        }
+
 
         [HttpGet]
         [Route("check-img-name-exists")]

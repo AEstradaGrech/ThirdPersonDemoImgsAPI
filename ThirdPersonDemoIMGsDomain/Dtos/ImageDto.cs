@@ -12,6 +12,7 @@ namespace ThirdPersonDemoIMGsDomain.Dtos
         [JsonConverter(typeof(JsonDateConverter),"dd-MM-yyyy")]
         public DateTime CreationDate { get; set; }
         public ImgCategory Category { get; set; }
+        public Guid UserGuid { get; set; }
 
     }
 }

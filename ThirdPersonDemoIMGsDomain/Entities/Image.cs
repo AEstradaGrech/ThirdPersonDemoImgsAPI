@@ -10,5 +10,6 @@ namespace ThirdPersonDemoIMGsDomain.Entities
         public DateTime CreationDate { get; set; }
         public ImgCategory Category { get; set;}
         public string GameStudioName { get; set; }
+        public Guid UserGuid { get; set; }
     }
 }
