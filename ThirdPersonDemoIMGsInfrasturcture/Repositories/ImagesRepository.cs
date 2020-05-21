@@ -31,9 +31,7 @@ namespace ThirdPersonDemoIMGsInfrasturcture.Repositories
         }
 
         public async Task<IEnumerable<Image>> GetByCategory(ImgCategory category)
-        {
-            var result = await DbSet.Where(img => img.Category == category).ToListAsync();
-
+        {           
             return DbSet.Where(img => img.Category == category)
                         .AsEnumerable();
         }
@@ -44,6 +42,11 @@ namespace ThirdPersonDemoIMGsInfrasturcture.Repositories
 
             return await DbSet.Where(spec.SatisfiedBy())
                               .FirstAsync();
+        }
+
+        public async Task<Image> GetUserImage(Guid userGuid)
+        {
+            return await DbSet.SingleOrDefaultAsync(img => img.UserGuid == userGuid);
         }
     }
 }

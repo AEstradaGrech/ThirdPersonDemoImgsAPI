@@ -42,6 +42,11 @@ namespace ThirdPersonDemoIMGs.Services
             return await _mapper.MapToDto(await _imagesRespository.GetByNameAndCategory(name, category));
         }
 
+        public async Task<ImageDto> GetUserImage(Guid userGuid)
+        {
+            return await _mapper.MapToDto(await _imagesRespository.GetUserImage(userGuid));
+        }
+
         public async Task<ImageDto> PostImage(ImageDto imgDto)
         {
             return await _mapper.MapToDto(await _imagesRespository.Add(await _mapper.MapToEntity(imgDto)));
