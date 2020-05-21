@@ -1,67 +1,21 @@
 ﻿<Properties StartupConfiguration="{BC6A7B16-C659-471E-881F-FA35F9069CF9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ThirdPersonDemoIMGs/appsettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ThirdPersonDemoIMGs/Startup.cs">
     <Files>
-      <File FileName="ThirdPersonDemoIMGs/Services/ImageMgmtService.cs" IsPinned="True" />
-      <File FileName="ThirdPersonDemoIMGsDomain/IRepositories/IUnitOfWork.cs" IsPinned="True" />
-      <File FileName="ThirdPersonDemoIMGs/Program.cs" Line="20" Column="57" />
-      <File FileName="ThirdPersonDemoIMGsDomain/Entities/Entity.cs" />
-      <File FileName="ThirdPersonDemoIMGsDomain/IRepositories/IRepository.cs" />
-      <File FileName="ThirdPersonDemoIMGsInfrasturcture/Repositories/BaseRespository.cs" />
-      <File FileName="ThirdPersonDemoIMGsInfrasturcture/Repositories/ImagesRepository.cs" />
-      <File FileName="ThirdPersonDemoIMGsDomain/IRepositories/IImagesRepository.cs" />
-      <File FileName="ThirdPersonDemoIMGsInfrasturcture/Context/ApplicationContext.cs" />
-      <File FileName="ThirdPersonDemoIMGsInfrasturcture/Context/EntityTypeConfigurations/ImageEntityTypeConfiguration.cs" />
-      <File FileName="ThirdPersonDemoIMGs/Startup.cs" Line="55" Column="113" />
-      <File FileName="ThirdPersonDemoIMGs/appsettings.Development.json" Line="14" Column="31" />
-      <File FileName="ThirdPersonDemoIMGs/appsettings.json" Line="16" Column="7" />
-      <File FileName="ThirdPersonDemoIMGsInfrasturcture/Migrations/20200416181437_InitialMig.cs" />
-      <File FileName="ThirdPersonDemoIMGsInfrasturcture/Migrations/20200416181437_InitialMig.Designer.cs" />
-      <File FileName="ThirdPersonDemoIMGs/Controllers/ImagesController.cs" />
-      <File FileName="ThirdPersonDemoIMGsDomain/Dtos/ImageDto.cs" />
-      <File FileName="ThirdPersonDemoIMGs/Services/Mappers/IImageMapperService.cs" />
-      <File FileName="ThirdPersonDemoIMGs/Services/IImageMgmtService.cs" />
-      <File FileName="ThirdPersonDemoIMGs/Services/Mappers/IMapperService.cs" />
-      <File FileName="ThirdPersonDemoIMGs/StartupConfigurationExtensions/StartupConfigurationExtensions.cs" />
-      <File FileName="ThirdPersonDemoIMGsDomain/Dtos/ErrorDetail.cs" />
-      <File FileName="ThirdPersonDemoIMGsInfrasturcture/Helpers/StaticStrings.cs" />
-      <File FileName="ThirdPersonDemoIMGsDomain/Enums/ImgCategory.cs" />
-      <File FileName="ThirdPersonDemoIMGsInfrasturcture/Migrations/20200512151033_IdSetterAndCategoryId.cs" />
-      <File FileName="ThirdPersonDemoIMGsInfrasturcture/Migrations/20200512151033_IdSetterAndCategoryId.Designer.cs" />
-      <File FileName="ThirdPersonDemoIMGsDomain/Specifications/ISpecificationFactory.cs" />
-      <File FileName="ThirdPersonDemoIMGsDomain/Specifications/Specification.cs" />
-      <File FileName="ThirdPersonDemoIMGsDomain/Specifications/ISpecification.cs" />
-      <File FileName="ThirdPersonDemoIMGsDomain/Specifications/ImgNameAndCategorySpec.cs" />
-      <File FileName="ThirdPersonDemoIMGsDomain/Entities/Image.cs" />
-      <File FileName="ThirdPersonDemoIMGs/appsettings.production.json" Line="1" Column="1" />
+      <File FileName="ThirdPersonDemoIMGs/StartupConfigurationExtensions/StartupConfigurationExtensions.cs" Line="105" Column="38" />
+      <File FileName="ThirdPersonDemoIMGsInfrasturcture/Helpers/ServiceConfig.cs" Line="9" Column="46" />
+      <File FileName="ThirdPersonDemoIMGsInfrasturcture/Helpers/ServiceDiscoveryHostedService.cs" Line="39" Column="93" />
+      <File FileName="ThirdPersonDemoIMGs/Startup.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ThirdPersonDemoIMGs" expanded="True">
             <Node name="ThirdPersonDemoIMGs" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="Controllers" expanded="True" />
-              <Node name="Services" expanded="True">
-                <Node name="Mappers" expanded="True" />
-              </Node>
               <Node name="StartupConfigurationExtensions" expanded="True" />
-              <Node name="appsettings.json" expanded="True" selected="True" />
-            </Node>
-            <Node name="ThirdPersonDemoIMGsDomain" expanded="True">
-              <Node name="Dtos" expanded="True" />
-              <Node name="Entities" expanded="True" />
-              <Node name="Enums" expanded="True" />
-              <Node name="IRepositories" expanded="True" />
-              <Node name="JsonConverters" expanded="True" />
-              <Node name="Specifications" expanded="True" />
+              <Node name="Startup.cs" selected="True" />
             </Node>
             <Node name="ThirdPersonDemoIMGsInfrasturcture" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="ProjectDependencies" expanded="True" />
-              </Node>
-              <Node name="Context" expanded="True" />
               <Node name="Helpers" expanded="True" />
-              <Node name="Repositories" expanded="True" />
             </Node>
           </Node>
         </State>
