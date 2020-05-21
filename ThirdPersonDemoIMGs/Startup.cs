@@ -56,15 +56,13 @@ namespace ThirdPersonDemoIMGs
             StaticStrings.ConnectionString = Configuration["DbConnectionString"];
 
             services.AddDbContext<ApplicationContext>(options => options.UseMySql(connectionString));
-
-            
-
-            services.RegisterServices();
+           
+            services.RegisterServices()
+                    .ConfigureConsul(Configuration);
 
             services.AddSwaggerGen(config =>
             {
-                config.SwaggerDoc("v1", new Info { Title = "TPS IMGs", Version = "v1", });
-                //config.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
+                config.SwaggerDoc("v1", new Info { Title = "TPS IMGs", Version = "v1", });                
             });
         }
 
@@ -81,37 +79,14 @@ namespace ThirdPersonDemoIMGs
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
-            
-
-            //app.UseCors("CorsPolicy");
-
+                      
             app.UseCors("CorsPolicy")
                .ConfigureGlobalExceptionHandler()
                .ManageMigrations()
                .UseHttpsRedirection()
                .UseMvc()
                .UseSwagger()
-               .UseSwaggerUI(config => config.SwaggerEndpoint("/swagger/v1/swagger.json", "TPS IMGs")); ;
-
-            //app.UseHttpsRedirection();
-
-            //app.UseMvc();
-
-            //app.UseSwagger();
-            //app.UseSwaggerUI(config => config.SwaggerEndpoint("/swagger/v1/swagger.json", "TPS IMGs"));
-
-           // app.UseHttpsRedirection();
-
-            //app.UseRouting();
-
-            //app.UseAuthorization();
-
-            //app.UseEndpoints(endpoints =>
-            //{
-            //    endpoints.MapControllers();
-            //});
-
+               .UseSwaggerUI(config => config.SwaggerEndpoint("/swagger/v1/swagger.json", "TPS IMGs"));           
             
         }
     }
