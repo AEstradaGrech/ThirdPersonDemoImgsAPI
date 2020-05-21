@@ -87,6 +87,12 @@ namespace ThirdPersonDemoIMGs.StartupConfigurationExtensions
             return services.RegisterConsulService(serviceConfig);
         }
 
+        /// <summary>
+        /// read the configuration required for service discovery from environment variables,
+        /// that were passed through the docker-compose.override.yml file.
+        /// </summary>
+        /// <param name="configuration"></param>
+        /// <returns></returns>
         public static ServiceConfig GetServiceConfig(this IConfiguration configuration)
         {
             if (configuration == null)
@@ -100,7 +106,13 @@ namespace ThirdPersonDemoIMGs.StartupConfigurationExtensions
                 ServiceId = configuration.GetValue<string>("ServiceConfig:serviceId")
             };
         }
-
+        /// <summary>
+        ///  register configuration and hosted service with Consul dependencies
+        ///  to dependency injection container
+        /// </summary>
+        /// <param name="services"></param>
+        /// <param name="serviceConfig"></param>
+        /// <returns></returns>
         public static IServiceCollection RegisterConsulService(this IServiceCollection services, ServiceConfig serviceConfig)
         {
             if (serviceConfig == null)
