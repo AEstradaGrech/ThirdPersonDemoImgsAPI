@@ -1,27 +1,21 @@
-﻿<Properties StartupConfiguration="{BC6A7B16-C659-471E-881F-FA35F9069CF9}|Deliveries">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ThirdPersonDemoIMGs/Startup.cs">
+﻿<Properties StartupConfiguration="{BC6A7B16-C659-471E-881F-FA35F9069CF9}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ThirdPersonDemoIMGs/Properties/launchSettings.json">
     <Files>
-      <File FileName="ThirdPersonDemoIMGs/appsettings.json" Line="16" Column="4" />
-      <File FileName="ThirdPersonDemoIMGs/appsettings.Development.json" Line="16" Column="4" />
+      <File FileName="ThirdPersonDemoIMGs/Startup.cs" Line="22" Column="2" />
+      <File FileName="ThirdPersonDemoIMGs/appsettings.json" />
+      <File FileName="ThirdPersonDemoIMGs/appsettings.Development.json" />
       <File FileName="ThirdPersonDemoIMGs/appsettings.production.json" />
-      <File FileName="ThirdPersonDemoIMGs/StartupConfigurationExtensions/StartupConfigurationExtensions.cs" />
-      <File FileName="ThirdPersonDemoIMGsInfrasturcture/Helpers/ServiceDiscoveryHostedService.cs" />
-      <File FileName="ThirdPersonDemoIMGs/Properties/launchSettings.json" />
-      <File FileName="ThirdPersonDemoIMGs/Startup.cs" Line="88" Column="29" />
-      <File FileName="ThirdPersonDemoIMGs/Program.cs" />
+      <File FileName="ThirdPersonDemoIMGs/Properties/launchSettings.json" Line="30" Column="48" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ThirdPersonDemoIMGs" expanded="True">
             <Node name="ThirdPersonDemoIMGs" expanded="True">
-              <Node name="Properties" expanded="True" />
-              <Node name="StartupConfigurationExtensions" expanded="True" />
+              <Node name="Properties" expanded="True">
+                <Node name="launchSettings.json" selected="True" />
+              </Node>
               <Node name="appsettings.json" expanded="True" />
-              <Node name="Startup.cs" selected="True" />
-            </Node>
-            <Node name="ThirdPersonDemoIMGsInfrasturcture" expanded="True">
-              <Node name="Helpers" expanded="True" />
             </Node>
           </Node>
         </State>
