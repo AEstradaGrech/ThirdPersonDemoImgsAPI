@@ -51,14 +51,15 @@ namespace ThirdPersonDemoIMGs
                     });
 
             //Docker stup
-            var connectionString = Environment.GetEnvironmentVariable("ConnectionString");
+            var connectionString = Environment.GetEnvironmentVariable("ConnectionString") ??
+                                   Configuration["DbConnectionString"];
 
             StaticStrings.ConnectionString = Configuration["DbConnectionString"];
 
             services.AddDbContext<ApplicationContext>(options => options.UseMySql(connectionString));
-           
-            services.RegisterServices()
-                    .ConfigureConsul(Configuration);
+
+            services.RegisterServices();
+                    //.ConfigureConsul(Configuration);
 
             services.AddSwaggerGen(config =>
             {
