@@ -1,21 +1,19 @@
 ﻿<Properties StartupConfiguration="{BC6A7B16-C659-471E-881F-FA35F9069CF9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ThirdPersonDemoIMGs/Properties/launchSettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ThirdPersonDemoIMGs/appsettings.json">
     <Files>
-      <File FileName="ThirdPersonDemoIMGs/Startup.cs" Line="22" Column="2" />
+      <File FileName="ThirdPersonDemoIMGs/Startup.cs" Line="64" Column="45" />
       <File FileName="ThirdPersonDemoIMGs/appsettings.json" />
       <File FileName="ThirdPersonDemoIMGs/appsettings.Development.json" />
       <File FileName="ThirdPersonDemoIMGs/appsettings.production.json" />
-      <File FileName="ThirdPersonDemoIMGs/Properties/launchSettings.json" Line="30" Column="48" />
+      <File FileName="ThirdPersonDemoIMGs/Properties/launchSettings.json" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ThirdPersonDemoIMGs" expanded="True">
             <Node name="ThirdPersonDemoIMGs" expanded="True">
-              <Node name="Properties" expanded="True">
-                <Node name="launchSettings.json" selected="True" />
-              </Node>
-              <Node name="appsettings.json" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="appsettings.json" expanded="True" selected="True" />
             </Node>
           </Node>
         </State>
