@@ -58,8 +58,8 @@ namespace ThirdPersonDemoIMGs
 
             services.AddDbContext<ApplicationContext>(options => options.UseMySql(connectionString));
 
-            services.RegisterServices();
-                    //.ConfigureConsul(Configuration);
+            services.RegisterServices()
+                    .ConfigureConsul(Configuration);
 
             services.AddSwaggerGen(config =>
             {
