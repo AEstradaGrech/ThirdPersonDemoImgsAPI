@@ -1,19 +1,22 @@
 ﻿<Properties StartupConfiguration="{BC6A7B16-C659-471E-881F-FA35F9069CF9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ThirdPersonDemoIMGs/appsettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ThirdPersonDemoIMGs/Authorization/AuthorizationPoliciesExtensions.cs">
     <Files>
-      <File FileName="ThirdPersonDemoIMGs/Startup.cs" Line="64" Column="45" />
-      <File FileName="ThirdPersonDemoIMGs/appsettings.json" />
-      <File FileName="ThirdPersonDemoIMGs/appsettings.Development.json" />
-      <File FileName="ThirdPersonDemoIMGs/appsettings.production.json" />
-      <File FileName="ThirdPersonDemoIMGs/Properties/launchSettings.json" />
+      <File FileName="ThirdPersonDemoIMGs/Startup.cs" Line="82" Column="31" />
+      <File FileName="ThirdPersonDemoIMGs/Authorization/AuthorizationRequirement.cs" Line="1" Column="1" />
+      <File FileName="ThirdPersonDemoIMGs/Controllers/ImagesController.cs" Line="45" Column="18" />
+      <File FileName="ThirdPersonDemoIMGs/Program.cs" />
+      <File FileName="ThirdPersonDemoIMGs/Authorization/AuthorizationPoliciesExtensions.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ThirdPersonDemoIMGs" expanded="True">
             <Node name="ThirdPersonDemoIMGs" expanded="True">
-              <Node name="Properties" expanded="True" />
-              <Node name="appsettings.json" expanded="True" selected="True" />
+              <Node name="Authorization" expanded="True">
+                <Node name="AuthorizationPoliciesExtensions.cs" selected="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="StartupConfigurationExtensions" expanded="True" />
             </Node>
           </Node>
         </State>
