@@ -37,5 +37,6 @@
     <Folder Include="Services\" />
     <Folder Include="Services\Mappers\" />
     <Folder Include="StartupConfigurationExtensions\" />
+    <Folder Include="Authorization\" />
   </ItemGroup>
 </Project>

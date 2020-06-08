@@ -9,6 +9,8 @@ COPY ThirdPersonDemoIMGsDomain/ThirdPersonDemoIMGsDomain.csproj ./ThirdPersonDem
 
 COPY ThirdPersonDemoIMGsInfrasturcture/ThirdPersonDemoIMGsInfrasturcture.csproj ./ThirdPersonDemoIMGsInfrasturcture/
 
+COPY ./ThirdPersonDemoIMGs/GajCert.pfx .
+
 RUN dotnet restore
 
 COPY . ./

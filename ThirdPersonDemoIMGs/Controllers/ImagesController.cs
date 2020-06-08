@@ -8,6 +8,7 @@ using ThirdPersonDemoIMGs.Services;
 using ThirdPersonDemoIMGsDomain.Dtos;
 using Newtonsoft.Json;
 using ThirdPersonDemoIMGsDomain.Enums;
+using Microsoft.AspNetCore.Authorization;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -44,6 +45,7 @@ namespace ThirdPersonDemoIMGs.Controllers
         [HttpGet]
         [Route("get-by-name-and-category")]
         [Produces("application/json")]
+        [Authorize(Policy = "Anonymous")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         public async Task<IActionResult> GetByNameAndCategory([FromQuery]string imgName, [FromQuery]ImgCategory category)
         {           
