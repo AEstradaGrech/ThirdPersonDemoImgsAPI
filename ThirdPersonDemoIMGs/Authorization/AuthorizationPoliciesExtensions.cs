@@ -14,6 +14,7 @@ namespace ThirdPersonDemoIMGs.Authorization
 
             return builder;
         }
+        
 
         private static AuthorizationOptions SetAnonymousTokenPolicy(this AuthorizationOptions options)
         {
@@ -30,8 +31,10 @@ namespace ThirdPersonDemoIMGs.Authorization
         public static IServiceCollection AddAuthorizationPolicies(this IServiceCollection services)
         {
             services.AddAuthorization(options => {
-                options.SetAnonymousTokenPolicy();
-                options.SetEmployeePolicy();
+                options.SetAnonymousTokenPolicy()
+                       .SetEmployeePolicy()
+                       .SetCustomersPolicy();
+
             });
 
             return services;
@@ -42,6 +45,14 @@ namespace ThirdPersonDemoIMGs.Authorization
             var scopes = new List<string> { "employee" };
 
             options.AddPolicy("Employees", policy => policy.RequireScope(scopes));
+
+            return options;
+        }
+        private static AuthorizationOptions SetCustomersPolicy(this AuthorizationOptions options)
+        {
+            var scopes = new List<string> { "pr-bronze", "pr-silver", "pr-gold", "empolyee" };
+
+            options.AddPolicy("Customers", policy => policy.RequireScope(scopes));
 
             return options;
         }

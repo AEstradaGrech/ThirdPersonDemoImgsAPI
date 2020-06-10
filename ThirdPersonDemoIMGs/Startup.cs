@@ -91,9 +91,9 @@ namespace ThirdPersonDemoIMGs
                     ValidateAudience = false,
                     //ValidateLifetime = true,
                     //LifetimeValidator = LifetimeValidator,
-                    //ValidIssuer = "http://localhost:5000"
+                    ValidIssuer = "http://localhost:5000"
                     // DockerIssuer
-                    ValidIssuer = "http://gaj-ids4"
+                    //ValidIssuer = "http://gaj-ids4"
 
                 };
             });

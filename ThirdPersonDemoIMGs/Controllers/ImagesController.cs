@@ -60,6 +60,7 @@ namespace ThirdPersonDemoIMGs.Controllers
         [HttpGet]
         [Route("get-by-category")]
         [Produces("application/json")]
+        [Authorize(Policy = "Anonymous")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         public async Task<IActionResult> GetByCategory([FromQuery]ImgCategory category)
         {
@@ -73,6 +74,7 @@ namespace ThirdPersonDemoIMGs.Controllers
 
         [HttpGet]
         [Route("get-user-img")]
+        [Authorize(Policy="Customers")]
         [Produces("application/json")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         public async Task<IActionResult> GetUserImage([FromQuery]Guid userGuid)
@@ -89,6 +91,7 @@ namespace ThirdPersonDemoIMGs.Controllers
         [HttpGet]
         [Route("check-img-name-exists")]
         [Produces("application/json")]
+        [Authorize(Policy = "Anonymous")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         public async Task<IActionResult> GheckImageNameExists([FromQuery]string imgName)
         {
@@ -98,6 +101,7 @@ namespace ThirdPersonDemoIMGs.Controllers
 
         [HttpPost]
         [Route("post-img")]
+        [Authorize(Policy="Customers")]
         [Produces("application/json")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
