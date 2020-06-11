@@ -50,7 +50,7 @@ namespace ThirdPersonDemoIMGs.Authorization
         }
         private static AuthorizationOptions SetCustomersPolicy(this AuthorizationOptions options)
         {
-            var scopes = new List<string> { "pr-bronze", "pr-silver", "pr-gold", "empolyee" };
+            var scopes = new List<string> { "pr-bronze", "pr-silver", "pr-gold", "employee" };
 
             options.AddPolicy("Customers", policy => policy.RequireScope(scopes));
 

@@ -44,6 +44,8 @@ namespace ThirdPersonDemoIMGs.Services
 
         public async Task<ImageDto> GetUserImage(Guid userGuid)
         {
+            Console.WriteLine($"IMG MGMT USER GUID :: {userGuid}");
+
             return await _mapper.MapToDto(await _imagesRespository.GetUserImage(userGuid));
         }
 
