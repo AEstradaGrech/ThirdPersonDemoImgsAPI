@@ -27,6 +27,8 @@ namespace ThirdPersonDemoIMGs.Services.Mappers
 
         public async Task<Image> MapToEntity(ImageDto dto)
         {
+            Console.WriteLine($"IMAGE USER GUID :: {dto.UserGuid}");
+
             var entity = new Image();            
 
             entity = (Image)entity.InjectFrom(dto);
@@ -36,6 +38,8 @@ namespace ThirdPersonDemoIMGs.Services.Mappers
             string[] base64Splitted = dto.ImgBase64.Split(',');
 
             entity.ImgBytes = Convert.FromBase64String(base64Splitted[1]);
+
+            Console.WriteLine($"ENTITY USER GUID :: {entity.UserGuid}");
 
             return entity;
         }

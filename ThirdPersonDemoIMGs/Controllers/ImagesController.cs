@@ -106,7 +106,8 @@ namespace ThirdPersonDemoIMGs.Controllers
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         public async Task<IActionResult>PostImage([FromBody]ImageDto imgDto)
-        {            
+        {
+            Console.WriteLine($"IMAGE USER GUID :: {imgDto.UserGuid}");
             var response = await _imageMgmtService.PostImage(imgDto);
 
             if (response != null)
