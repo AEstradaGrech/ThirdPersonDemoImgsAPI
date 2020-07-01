@@ -19,5 +19,10 @@ namespace ThirdPersonDemoIMGsDomain.Specifications
         {
             return _predicate;
         }
+
+        public virtual void SetPredicate(Expression<Func<T,bool>> predicate = null)
+        {
+            _predicate = predicate;
+        }
     }
 }
