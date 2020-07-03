@@ -44,6 +44,16 @@ namespace ThirdPersonDemoIMGsInfrasturcture.Repositories
                               .FirstAsync();
         }
 
+        public async Task<IEnumerable<Image>> GetCatalogueImgs(IEnumerable<string> imgNames)
+        {
+            var spec = await _specFactory.GetImgNamesSpec(imgNames);
+
+            var catalogueSet = DbSet.Where(img => img.Category == ImgCategory.GamesCatalogue);
+
+            return catalogueSet.Where(spec.SatisfiedBy())
+                               .AsEnumerable();
+        }
+
         public async Task<Image> GetUserImage(Guid userGuid)
         {
             return await DbSet.SingleOrDefaultAsync(img => img.UserGuid == userGuid);
