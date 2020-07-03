@@ -42,6 +42,11 @@ namespace ThirdPersonDemoIMGs.Services
             return await _mapper.MapToDto(await _imagesRespository.GetByNameAndCategory(name, category));
         }
 
+        public async Task<IEnumerable<ImageDto>> GetCatalogueImages(IEnumerable<string> imgsNames)
+        {
+            return await _mapper.MapManyToDto(await _imagesRespository.GetCatalogueImgs(imgsNames));
+        }
+
         public async Task<ImageDto> GetUserImage(Guid userGuid)
         {
             Console.WriteLine($"IMG MGMT USER GUID :: {userGuid}");

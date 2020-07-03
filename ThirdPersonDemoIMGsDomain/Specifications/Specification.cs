@@ -18,11 +18,6 @@ namespace ThirdPersonDemoIMGsDomain.Specifications
         public virtual Expression<Func<T, bool>> SatisfiedBy()
         {
             return _predicate;
-        }
-
-        public virtual void SetPredicate(Expression<Func<T,bool>> predicate = null)
-        {
-            _predicate = predicate;
-        }
+        }        
     }
 }
