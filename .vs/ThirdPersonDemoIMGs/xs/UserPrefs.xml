@@ -1,42 +1,21 @@
 ﻿<Properties StartupConfiguration="{BC6A7B16-C659-471E-881F-FA35F9069CF9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ThirdPersonDemoIMGsInfrasturcture/Repositories/ImagesRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ThirdPersonDemoIMGs/Controllers/ImagesController.cs">
     <Files>
-      <File FileName="ThirdPersonDemoIMGs/Startup.cs" Line="66" Column="41" />
-      <File FileName="ThirdPersonDemoIMGs/appsettings.json" Line="3" Column="104" />
-      <File FileName="ThirdPersonDemoIMGs/appsettings.Development.json" Line="3" Column="3" />
-      <File FileName="ThirdPersonDemoIMGs/Controllers/ImagesController.cs" Line="125" Column="80" />
-      <File FileName="ThirdPersonDemoIMGs/Properties/launchSettings.json" Line="32" Column="47" />
-      <File FileName="ThirdPersonDemoIMGsInfrasturcture/Repositories/ImagesRepository.cs" Line="37" Column="10" />
-      <File FileName="ThirdPersonDemoIMGsDomain/Specifications/ImgNamesSpecification.cs" Line="31" Column="44" />
-      <File FileName="ThirdPersonDemoIMGsDomain/Specifications/Specification.cs" />
-      <File FileName="ThirdPersonDemoIMGsDomain/Specifications/SpecificationFactory.cs" />
-      <File FileName="ThirdPersonDemoIMGsDomain/Specifications/ISpecificationFactory.cs" />
-      <File FileName="ThirdPersonDemoIMGsDomain/Specifications/ImgNameAndCategorySpec.cs" />
-      <File FileName="ThirdPersonDemoIMGsDomain/Extensions/ExpressionVisitorExtensions.cs" />
-      <File FileName="ThirdPersonDemoIMGs/appsettings.production.json" Line="3" Column="104" />
-      <File FileName="ThirdPersonDemoIMGs/Services/IImageMgmtService.cs" Line="19" Column="87" />
-      <File FileName="ThirdPersonDemoIMGs/Services/ImageMgmtService.cs" Line="49" Column="1" />
-      <File FileName="ThirdPersonDemoIMGsDomain/IRepositories/IImagesRepository.cs" Line="17" Column="81" />
+      <File FileName="ThirdPersonDemoIMGs/Startup.cs" Line="93" Column="36" />
+      <File FileName="ThirdPersonDemoIMGs/appsettings.json" />
+      <File FileName="ThirdPersonDemoIMGs/appsettings.Development.json" />
+      <File FileName="ThirdPersonDemoIMGs/appsettings.production.json" />
+      <File FileName="ThirdPersonDemoIMGs/Controllers/ImagesController.cs" Line="117" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ThirdPersonDemoIMGs" expanded="True">
             <Node name="ThirdPersonDemoIMGs" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Properties" expanded="True" />
-              <Node name="Services" expanded="True" />
-              <Node name="appsettings.json" expanded="True" />
-            </Node>
-            <Node name="ThirdPersonDemoIMGsDomain" expanded="True">
-              <Node name="Extensions" expanded="True" />
-              <Node name="IRepositories" expanded="True" />
-              <Node name="Specifications" expanded="True" />
-            </Node>
-            <Node name="ThirdPersonDemoIMGsInfrasturcture" expanded="True">
-              <Node name="Repositories" expanded="True">
-                <Node name="ImagesRepository.cs" selected="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="ImagesController.cs" selected="True" />
               </Node>
+              <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
         </State>
